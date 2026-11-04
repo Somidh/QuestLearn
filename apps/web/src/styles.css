@@ -1,0 +1,36 @@
+@import '@fontsource-variable/fredoka';
+@import '@fontsource-variable/figtree';
+@import 'tailwindcss';
+
+@theme {
+  --color-dusk: #1b1340;
+  --color-plum: #2e1f5e;
+  --color-glow: #ffb72b;
+  --color-mint: #2ee6a6;
+  --color-coral: #ff5c7a;
+  --color-sky: #7fd4ff;
+  --color-mist: #c9c0ee;
+  --color-sign: #0f6b5a;
+  --color-paper: #f6efdc;
+  --font-display: 'Fredoka Variable', sans-serif;
+  --font-body: 'Figtree Variable', sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: var(--color-dusk);
+  color: var(--color-paper);
+  font-family: var(--font-body);
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-sky);
+  outline-offset: 2px;
+}
